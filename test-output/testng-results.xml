@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-12T22:57:05 CDT" name="Default Suite" finished-at="2023-09-12T22:57:13 CDT" duration-ms="8344">
+    <groups>
+    </groups>
+    <test started-at="2023-09-12T22:57:05 CDT" name="seleniumWebdriverFramework" finished-at="2023-09-12T22:57:13 CDT" duration-ms="8344">
+      <class name="com.testcases.TestCases">
+        <test-method signature="TestCaseLogin()[pri:0, instance:com.testcases.TestCases@6b4a4e18]" started-at="2023-09-12T22:57:05 CDT" name="TestCaseLogin" finished-at="2023-09-12T22:57:10 CDT" duration-ms="4987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseLogin -->
+        <test-method signature="TestCaseLoginReset()[pri:0, instance:com.testcases.TestCases@6b4a4e18]" started-at="2023-09-12T22:57:10 CDT" name="TestCaseLoginReset" finished-at="2023-09-12T22:57:13 CDT" duration-ms="3307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCaseLoginReset -->
+      </class> <!-- com.testcases.TestCases -->
+    </test> <!-- seleniumWebdriverFramework -->
+  </suite> <!-- Default Suite -->
+</testng-results>
