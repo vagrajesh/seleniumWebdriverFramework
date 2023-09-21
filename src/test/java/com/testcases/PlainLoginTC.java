@@ -5,9 +5,8 @@ import com.pages.LoginPage;
 import com.pages.WelcomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 
-public class LoginTC1 {
+public class PlainLoginTC {
     public static void main(String[] args) throws InterruptedException {
         //call test case 1
         System.out.println("Test case 1");
@@ -27,12 +26,11 @@ public class LoginTC1 {
         loginPage.enterUserName();
         loginPage.enterPassword();
         loginPage.clickLoginBtn();
-        String title = browserFunctions.getTitle();
+        /*String title = browserFunctions.getTitle();
         Assert.assertEquals("Guru99 Bank Manager HomePage",title);
         String a = welcomePage.getWelcomeMsg();
         System.out.println(a);
-        String b = welcomePage.getWelcomeText();
-        System.out.println(b);
+        System.out.println(b);*/
         browserFunctions.closeApplication();
     }
 }

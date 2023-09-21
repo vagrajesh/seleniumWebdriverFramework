@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-12T22:57:05 CDT" name="Default Suite" finished-at="2023-09-12T22:57:13 CDT" duration-ms="8344">
+  <suite started-at="2023-09-20T09:55:01 CDT" name="Default Suite" finished-at="2023-09-20T09:55:22 CDT" duration-ms="20937">
     <groups>
     </groups>
-    <test started-at="2023-09-12T22:57:05 CDT" name="seleniumWebdriverFramework" finished-at="2023-09-12T22:57:13 CDT" duration-ms="8344">
-      <class name="com.testcases.TestCases">
-        <test-method signature="TestCaseLogin()[pri:0, instance:com.testcases.TestCases@6b4a4e18]" started-at="2023-09-12T22:57:05 CDT" name="TestCaseLogin" finished-at="2023-09-12T22:57:10 CDT" duration-ms="4987" status="PASS">
+    <test started-at="2023-09-20T09:55:01 CDT" name="seleniumWebdriverFramework" finished-at="2023-09-20T09:55:22 CDT" duration-ms="20937">
+      <class name="com.testcases.TestCasesTestNG">
+        <test-method signature="testCaseLogin()[pri:0, instance:com.testcases.TestCasesTestNG@6b4a4e18]" started-at="2023-09-20T09:55:01 CDT" name="testCaseLogin" finished-at="2023-09-20T09:55:09 CDT" duration-ms="7826" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCaseLogin -->
-        <test-method signature="TestCaseLoginReset()[pri:0, instance:com.testcases.TestCases@6b4a4e18]" started-at="2023-09-12T22:57:10 CDT" name="TestCaseLoginReset" finished-at="2023-09-12T22:57:13 CDT" duration-ms="3307" status="PASS">
+        </test-method> <!-- testCaseLogin -->
+        <test-method signature="testCaseLoginReset()[pri:0, instance:com.testcases.TestCasesTestNG@6b4a4e18]" started-at="2023-09-20T09:55:09 CDT" name="testCaseLoginReset" finished-at="2023-09-20T09:55:12 CDT" duration-ms="3170" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCaseLoginReset -->
-      </class> <!-- com.testcases.TestCases -->
+        </test-method> <!-- testCaseLoginReset -->
+        <test-method signature="testCaseWelcome()[pri:0, instance:com.testcases.TestCasesTestNG@6b4a4e18]" started-at="2023-09-20T09:55:12 CDT" name="testCaseWelcome" finished-at="2023-09-20T09:55:22 CDT" duration-ms="9900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseWelcome -->
+      </class> <!-- com.testcases.TestCasesTestNG -->
     </test> <!-- seleniumWebdriverFramework -->
   </suite> <!-- Default Suite -->
 </testng-results>

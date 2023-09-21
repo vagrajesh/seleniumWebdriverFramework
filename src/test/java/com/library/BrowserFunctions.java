@@ -6,7 +6,7 @@ public class BrowserFunctions {
     // Create Webdriver Instance
 
     WebDriver driver;
-    String appURL = "https://www.demo.guru99.com/V4/index.php";
+    String appURL = Utilities.BASE_URL;
 
     // Constructor - automatically called as soon as the object of the class is created
     public BrowserFunctions(WebDriver driver) {
@@ -19,14 +19,6 @@ public class BrowserFunctions {
         driver.get(appURL);
         Thread.sleep(1000);
     }
-
-    public String getTitle(){
-        String title;
-        //get the title
-        title= driver.getTitle();
-        return title;
-    }
-
     public void closeApplication(){
         //close the browser
         driver.close();
