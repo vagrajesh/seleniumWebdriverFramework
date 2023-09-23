@@ -9,12 +9,37 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default Suite</th></tr>
-<tr><td><a href="#t0">seleniumWebdriverFramework</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">20,937</td><td></td><td></td></tr>
+<tr><td><a href="#t0">seleniumWebdriverFramework</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,653</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">seleniumWebdriverFramework &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testcases.TestCasesTestNG</td><td><a href="#m0">testCaseLogin</a></td><td rowspan="1">1695221701799</td><td rowspan="1">7826</td></tr><tr class="passedeven"><td><a href="#m1">testCaseLoginReset</a></td><td rowspan="1">1695221709625</td><td rowspan="1">3170</td></tr><tr class="passedeven"><td><a href="#m2">testCaseWelcome</a></td><td rowspan="1">1695221712795</td><td rowspan="1">9900</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">seleniumWebdriverFramework &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testcases.TestCasesTestNG</td><td><a href="#m0">testCaseWelcome</a></td><td rowspan="1">1695422030054</td><td rowspan="1">10587</td></tr><tr><th colspan="4">seleniumWebdriverFramework &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.testcases.TestCasesTestNG</td><td><a href="#m1">testCaseLogin</a></td><td rowspan="1">1695422011066</td><td rowspan="1">13777</td></tr><tr class="passedeven"><td><a href="#m2">testCaseLoginReset</a></td><td rowspan="1">1695422024856</td><td rowspan="1">5198</td></tr></tbody>
 </table>
-<h2>seleniumWebdriverFramework</h2><h3 id="m0">com.testcases.TestCasesTestNG#testCaseLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testcases.TestCasesTestNG#testCaseLoginReset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testcases.TestCasesTestNG#testCaseWelcome</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>seleniumWebdriverFramework</h2><h3 id="m0">com.testcases.TestCasesTestNG#testCaseWelcome</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Build info: version: &apos;4.12.0&apos;, revision: &apos;249f2a7d1b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d1b63769871d53b798b710715b4bfe6, findElement {using=xpath, value=//marquee[text()=&quot;Welcome To Manager&apos;s Page of Guru99 Bank&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\LENOVO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63049}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63049/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d1b63769871d53b798b710715b4bfe6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at com.pages.WelcomePage.verifyWelcomeTextAndMessage(WelcomePage.java:38)
+	at com.testcases.TestCasesTestNG.testCaseWelcome(TestCasesTestNG.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testcases.TestCasesTestNG#testCaseLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testcases.TestCasesTestNG#testCaseLoginReset</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

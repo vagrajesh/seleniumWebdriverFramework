@@ -3,13 +3,15 @@ package com.testcases;
 import com.library.BrowserFunctions;
 import com.pages.LoginPage;
 import com.pages.WelcomePage;
+import jdk.jfr.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class TestCasesTestNG {
     //Create Webdriver class instance
-    @Test
+    @Test(priority = 0, description = "LOGIN TESTS")
+    @Description("Verify User is able to Login successfully with correct credentials")
     public void testCaseLogin() throws InterruptedException {
     WebDriver driver = new ChromeDriver();
      //Create Browser functions class instance

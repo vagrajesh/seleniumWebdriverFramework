@@ -51,4 +51,12 @@ public class LoginPage {
         Thread.sleep(1000);
     }
 
+    public void userLoginIntoApplication(String uName, String pwd) throws InterruptedException {
+        Assert.assertEquals(driver.getTitle(),expectedLoginTitle);
+        driver.findElement(userNameTxtBox).sendKeys(uName);
+        driver.findElement(passwordTxtBox).sendKeys(pwd);
+        driver.findElement(loginBtn).click();
+        Thread.sleep(3000);
+    }
+
 }

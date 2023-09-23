@@ -21,6 +21,6 @@ public class BrowserFunctions {
     }
     public void closeApplication(){
         //close the browser
-        driver.close();
+        driver.quit();
     }
 }
