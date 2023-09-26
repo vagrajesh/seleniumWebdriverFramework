@@ -1,5 +1,6 @@
 package com.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,12 +21,14 @@ public class AmazonHomePage {
 
     //Methods
    // Get URL Method
+    @Step("Amazon website launched")
     public void amazonAppLaunch() throws InterruptedException {
         driver.get(amazonUrl);
         driver.manage().window().maximize();
         Thread.sleep(1000);
     }
     //Select Language method
+    @Step("Language English has been selected successfully")
     public void selectEnglishLanguage() throws InterruptedException {
         WebElement englishLanguageSelector = driver.findElement(By.xpath("//*[@class='nav-a nav-a-2 icp-link-style-2']"));
         Actions actions = new Actions(driver);

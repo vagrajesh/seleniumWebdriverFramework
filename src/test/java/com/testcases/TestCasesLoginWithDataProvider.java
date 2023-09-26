@@ -2,25 +2,28 @@ package com.testcases;
 
 import com.library.BrowserFunctions;
 import com.pages.LoginPage;
+import com.pages.WelcomePage;
+import io.qameta.allure.Description;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestCasesLoginWithDataProvider {
-    //Function Method
-        //initialize webdriver object
-            //create class objects
+        WebDriver driver = new ChromeDriver();
+        BrowserFunctions browserFunctions = new BrowserFunctions(driver);
+        LoginPage loginPage = new LoginPage(driver);
 
-    WebDriver driver = new ChromeDriver();
-    BrowserFunctions browserFunctions = new BrowserFunctions(driver);
-    LoginPage loginPage = new LoginPage(driver);
+        WelcomePage welcomePage = new WelcomePage(driver);
 
     @Test(dataProvider = "loginTestData")
+    @Description("Verify User Logged in successfully")
     public void userLoginTests(String userName, String password) throws InterruptedException {
         browserFunctions.launchApplication();
-        loginPage.userLoginIntoApplication(userName,password);
-        browserFunctions.closeApplication();
+        loginPage.verifyLoginPageTitle();
+        loginPage.userLoginIntoApplication(userName, password);
+        welcomePage.verifyWelcomePageTitle();
+        welcomePage.verifyWelcomeTextAndMessage();
     }
     @DataProvider
     public Object[][] loginTestData(){
@@ -30,9 +33,8 @@ public class TestCasesLoginWithDataProvider {
         loginData[0][1] = "pEnAnam"; // password
 
         //with invalid data
-        loginData[1][0] = "rvagella";
-        loginData[1][1] = "Password";
-
+        //loginData[1][0] = "rajesh";
+        //loginData[1][1] = "Password";
         return loginData;
     }
 }

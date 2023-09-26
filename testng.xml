@@ -1,0 +1,7 @@
+<suite name = "LoginTestSuite">
+    <test name = "LoginPositive">
+        <classes>
+            <class name = "com.testcases.TestCasesLoginWithDataProvider"/>
+        </classes>
+    </test>
+</suite>
